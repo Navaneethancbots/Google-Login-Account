@@ -19,16 +19,16 @@ final auth = FirebaseAuth.instance;
             child: Text('WELCOME',),
 
           ),
-          // Padding(
-          //   padding: const EdgeInsets.only(top: 500),
-          //   child: FlatButton(
-          //     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-          //     color: Colors.blue[800],
-          //     child: Text('Signout',style: TextStyle(color: Colors.white,fontFamily: 'poppins',fontWeight: FontWeight.w900),),onPressed: (){
-          //     auth.signOut();
-          //     Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>LoginPage()),);
-          //   },),
-          // ),
+          Padding(
+            padding: const EdgeInsets.only(top: 500),
+            child: FlatButton(
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+              color: Colors.blue[800],
+              child: Text('Signout',style: TextStyle(color: Colors.white,fontFamily: 'poppins',fontWeight: FontWeight.w900),),onPressed: (){
+              auth.signOut();
+              Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=>LoginPage()),);
+            },),
+          ),
         ],
       ),
     );
